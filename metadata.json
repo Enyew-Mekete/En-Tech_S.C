@@ -1,0 +1,6 @@
+{
+  "name": "En-Tech S.C Website",
+  "description": "An interactive and responsive website for En-Tech S.C - Technology Company featuring dark mode, automatic hero sliders, interactive services, order application, and beautiful layouts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

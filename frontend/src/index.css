@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #1e293b;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- Dark Mode Custom Overrides --- */
+
+/* Root Body & HTML overrides */
+html.dark body {
+  background-color: #0f172a !important; /* Deep luxury navy slate */
+  color: #f8fafc !important; /* Slate 50 */
+}
+
+/* Card Overrides (elements with bg-white) */
+html.dark .bg-white {
+  background-color: #1e293b !important; /* Slate 800 */
+  color: #f8fafc !important;
+}
+
+/* Section & Alternative Overrides (bg-slate-50, bg-gray-50, bg-slate-100, bg-gray-100) */
+html.dark .bg-slate-50,
+html.dark .bg-gray-50,
+html.dark .bg-slate-100,
+html.dark .bg-gray-100,
+html.dark .bg-[#e6f1f5] {
+  background-color: #0f172a !important; /* Slate 900 (Main theme backdrop) */
+  color: #f1f5f9 !important;
+}
+
+/* Accent texts like #0C4D69 (which is dark blue/cyan) need to turn bright cyan for high contrast */
+html.dark [class*="text-[#0C4D69]"] {
+  color: #22d3ee !important; /* Bright Cyan 400 */
+}
+
+/* Accent backgrounds like #0C4D69 must turn brighter for action items */
+html.dark [class*="bg-[#0C4D69]"] {
+  background-color: #0e7490 !important; /* Cyan 700 */
+  color: #ffffff !important;
+}
+
+/* Accent borders like #0C4D69 */
+html.dark [class*="border-[#0C4D69]"] {
+  border-color: #334155 !important; /* Slate 700 */
+}
+
+/* High-contrast and Secondary Text */
+html.dark .text-slate-900,
+html.dark .text-gray-900,
+html.dark .text-slate-800,
+html.dark .text-slate-700 {
+  color: #f8fafc !important; /* Slate 50 */
+}
+
+html.dark .text-slate-600,
+html.dark .text-gray-600,
+html.dark .text-slate-500,
+html.dark .text-gray-500 {
+  color: #94a3b8 !important; /* Slate 400 (Secondary text) */
+}
+
+/* Core Borders */
+html.dark .border-slate-200,
+html.dark .border-gray-200,
+html.dark .border-slate-100,
+html.dark .border-gray-100 {
+  border-color: #334155 !important; /* Slate 700 */
+}
+
+/* Inputs & Forms inside order modal or contact form */
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background-color: #0f172a !important; /* Slate 900 */
+  color: #ffffff !important;
+  border-color: #475569 !important; /* Slate 600 */
+}
+
+html.dark input::placeholder,
+html.dark select::placeholder,
+html.dark textarea::placeholder {
+  color: #64748b !important; /* Slate 500 */
+}
+
+/* Dropdown menus (which have bg-[#05283C]) */
+html.dark [class*="bg-[#05283C]"] {
+  background-color: #0f172a !important; /* Darken the header dropdowns */
+  border-color: #334155 !important;
+}
+
+/* Shadows */
+html.dark .shadow-sm,
+html.dark .shadow,
+html.dark .shadow-md,
+html.dark .shadow-lg,
+html.dark .shadow-xl {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Header dynamic Order CTA adjustment */
+html.dark #nav-cta-order-now {
+  background-color: #22d3ee !important; /* Bright Cyan */
+  color: #0f172a !important; /* Dark Slate */
+}
+
+html.dark #nav-cta-order-now:hover {
+  background-color: #06b6d4 !important; /* Cyan 500 */
+}
