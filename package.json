@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build frontend && esbuild backend/server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d frontend/dist",
     "dev": "tsx backend/server.ts",
     "start": "node dist/server.cjs",
     "clean": "rm -rf dist frontend/dist",
