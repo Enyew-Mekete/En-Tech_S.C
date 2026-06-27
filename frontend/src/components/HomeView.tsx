@@ -329,7 +329,7 @@ export default function HomeView({ setView, onOpenOrderModal, currentSlideIndex,
             <div className="bg-white border-2 border-[#0C4D69]/25 rounded-2xl overflow-hidden shadow-[0_4px_30px_rgba(12,77,105,0.03)] flex flex-col justify-between hover:shadow-lg hover:border-[#0C4D69] transition-all duration-300 group">
               <div>
                 <img
-                  src="/assets/image/services_web.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/image/services_web.jpg`}
                   alt="Web Design & Development"
                   referrerPolicy="no-referrer"
                   className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -364,7 +364,7 @@ export default function HomeView({ setView, onOpenOrderModal, currentSlideIndex,
             <div className="bg-white border-2 border-[#0C4D69]/25 rounded-2xl overflow-hidden shadow-[0_4px_30px_rgba(12,77,105,0.03)] flex flex-col justify-between hover:shadow-lg hover:border-[#0C4D69] transition-all duration-300 group">
               <div>
                 <img
-                  src="/assets/image/services_website.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/image/services_website.jpg`}
                   alt="Website Design & Development"
                   referrerPolicy="no-referrer"
                   className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -399,7 +399,7 @@ export default function HomeView({ setView, onOpenOrderModal, currentSlideIndex,
             <div className="bg-white border-2 border-[#0C4D69]/25 rounded-2xl overflow-hidden shadow-[0_4px_30px_rgba(12,77,105,0.03)] flex flex-col justify-between hover:shadow-lg hover:border-[#0C4D69] transition-all duration-300 group">
               <div>
                 <img
-                  src="/assets/image/services_graphics.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/image/services_graphics.jpg`}
                   alt="Graphics Design"
                   referrerPolicy="no-referrer"
                   className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -434,7 +434,7 @@ export default function HomeView({ setView, onOpenOrderModal, currentSlideIndex,
             <div className="bg-white border-2 border-[#0C4D69]/25 rounded-2xl overflow-hidden shadow-[0_4px_30px_rgba(12,77,105,0.03)] flex flex-col justify-between hover:shadow-lg hover:border-[#0C4D69] transition-all duration-300 group">
               <div>
                 <img
-                  src="/assets/image/services_erp.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/image/services_erp.jpg`}
                   alt="ERP System Consulting"
                   referrerPolicy="no-referrer"
                   className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"

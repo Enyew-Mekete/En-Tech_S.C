@@ -240,7 +240,7 @@ export const DETAILED_SERVICES_MAP: Record<string, {
 }> = {
   "web-dev": {
     title: "Web Application Development",
-    bannerImage: "assets/image/web_banner.jpg",
+    bannerImage: `${import.meta.env.BASE_URL}assets/image/web_banner.jpg`,
     introText: "At En-Tech S.C., we engineer elite full-stack web products built with React, Node, and advanced responsive architectures. We focus on security, speed, and clean code principles to solve high-load enterprise challenges.",
     approachTitle: "Our Strategic Engineering Approach",
     approachSteps: [
@@ -251,14 +251,14 @@ export const DETAILED_SERVICES_MAP: Record<string, {
     actionTitle: "Advanced Solutions in Action",
     actionBlocks: [
       {
-        image: "assets/image/web_action1.jpg",
+        image: `${import.meta.env.BASE_URL}assets/image/web_action1.jpg`,
         captionTitle: "Full-Stack Portal",
         captionDesc: "Real-time state synchronization",
         title: "Durable Web Applications",
         desc: "We deploy modular front-end architectures that talk securely to RESTful or GraphQL backends, handling high simultaneous transactions smoothly."
       },
       {
-        image: "assets/image/web_action2.jpg",
+        image: `${import.meta.env.BASE_URL}assets/image/web_action2.jpg`,
         captionTitle: "Cloud Integration",
         captionDesc: "Hardened secure database tunnels",
         title: "API & Infrastructure Pipelines",
@@ -271,20 +271,20 @@ export const DETAILED_SERVICES_MAP: Record<string, {
         companyName: "Commercial Bank of Ethiopia",
         projectName: "Financial Analytics Hub",
         label: "Designed and deployed a highly secure, real-time banking intelligence portal monitoring transactional health.",
-        imageUrl: "assets/image/web_project1.jpg"
+        imageUrl: `${import.meta.env.BASE_URL}assets/image/web_project1.jpg`
       },
       {
         id: "web-proj-2",
         companyName: "Logistics SC",
         projectName: "Global Supply Orchestration",
         label: "Created a comprehensive freight-tracking web interface featuring geocoding mapping and automated low-stock warnings.",
-        imageUrl: "assets/image/web_project2.jpg"
+        imageUrl: `${import.meta.env.BASE_URL}assets/image/web_project2.jpg`
       }
     ]
   },
   "website-dev": {
     title: "Brand & Corporate Websites",
-    bannerImage: "assets/image/website_banner.jpg",
+    bannerImage: `${import.meta.env.BASE_URL}assets/image/website_banner.jpg`,
     introText: "Establish a magnificent digital storefront. We design custom responsive layouts featuring beautiful micro-interactions, cohesive typography, and high-conversion marketing funnels built for mobile and desktop screens alike.",
     approachTitle: "How We Design Brand Experiences",
     approachSteps: [
@@ -295,14 +295,14 @@ export const DETAILED_SERVICES_MAP: Record<string, {
     actionTitle: "Stunning Portals in Action",
     actionBlocks: [
       {
-        image: "assets/image/website_action1.jpg",
+        image: `${import.meta.env.BASE_URL}assets/image/website_action1.jpg`,
         captionTitle: "Corporate Web Portal",
         captionDesc: "Clean responsive grid layout",
         title: "Custom Brand Portals",
         desc: "We engineer pixel-perfect, lightning-fast marketing hubs loaded with interactive sliders, custom illustrations, and smooth scroll animations."
       },
       {
-        image: "assets/image/website_action2.jpg",
+        image: `${import.meta.env.BASE_URL}assets/image/website_action2.jpg`,
         captionTitle: "Lead Generation",
         captionDesc: "Capture funnels optimized for conversion",
         title: "High-Converting Landing Pages",
@@ -315,20 +315,20 @@ export const DETAILED_SERVICES_MAP: Record<string, {
         companyName: "Awash Coffee",
         projectName: "Brand Story & Direct Order",
         label: "Designed an elegant, award-winning media portal presenting agricultural origin stories alongside interactive product catalogs.",
-        imageUrl: "assets/image/website_project1.jpg"
+        imageUrl: `${import.meta.env.BASE_URL}assets/image/website_project1.jpg`
       },
       {
         id: "site-proj-2",
         companyName: "Abyssinia Travels",
         projectName: "Booking & Geolocation Suite",
         label: "An immersive, high-conversion tour reservation system integrated with real-time currency conversions and interactive maps.",
-        imageUrl: "assets/image/website_project2.jpg"
+        imageUrl: `${import.meta.env.BASE_URL}assets/image/website_project2.jpg`
       }
     ]
   },
   "graphics": {
     title: "Digital Graphic Art",
-    bannerImage: "assets/image/graphics_banner.jpg",
+    bannerImage: `${import.meta.env.BASE_URL}assets/image/graphics_banner.jpg`,
     introText: "Led by Director of Digital Art Meseret Tesfaye, our graphics division delivers premium visual assets. We create hand-crafted vector logotypes, engaging marketing banners, and click-optimized YouTube graphics designed to drive high organic traffic.",
     approachTitle: "Our Creative Design Process",
     approachSteps: [
@@ -339,14 +339,14 @@ export const DETAILED_SERVICES_MAP: Record<string, {
     actionTitle: "Creative Assets in Action",
     actionBlocks: [
       {
-        image: "assets/image/graphics_action1.jpg",
+        image: `${import.meta.env.BASE_URL}assets/image/graphics_action1.jpg`,
         captionTitle: "Logo Guideline",
         captionDesc: "Precision vector identity system",
         title: "Bespoke Brand Identity",
         desc: "We design highly memorable logotypes, defining brand palettes and full visual style guides to establish strong recognition."
       },
       {
-        image: "assets/image/graphics_action2.jpg",
+        image: `${import.meta.env.BASE_URL}assets/image/graphics_action2.jpg`,
         captionTitle: "Social Creatives",
         captionDesc: "Click-optimized CTR graphics",
         title: "High-Performance Promotional Assets",
@@ -359,13 +359,13 @@ export const DETAILED_SERVICES_MAP: Record<string, {
         companyName: "Tech-SC",
         projectName: "Complete Rebrand Ecosystem",
         label: "Developed custom vector identity assets, color book guidelines, and marketing templates across all corporate touchpoints.",
-        imageUrl: "assets/image/graphics_project1.jpg"
+        imageUrl: `${import.meta.env.BASE_URL}assets/image/graphics_project1.jpg`
       }
     ]
   },
   "erp-system": {
     title: "Enterprise ERP & Operations",
-    bannerImage: "assets/image/erp_banner.jpg",
+    bannerImage: `${import.meta.env.BASE_URL}assets/image/erp_banner.jpg`,
     introText: "Take full control of your institution. We design and configure integrated multi-ledger ERP modules, tracking finance operations, automating supplier purchasing triggers, managing employee payroll, and streamlining stock control.",
     approachTitle: "Our ERP Implementation Framework",
     approachSteps: [
@@ -376,14 +376,14 @@ export const DETAILED_SERVICES_MAP: Record<string, {
     actionTitle: "Enterprise Systems in Action",
     actionBlocks: [
       {
-        image: "assets/image/erp_action1.jpg",
+        image: `${import.meta.env.BASE_URL}assets/image/erp_action1.jpg`,
         captionTitle: "Financial Suite",
         captionDesc: "Double-entry bookkeeping and accounting",
         title: "Integrated Financial Ledger",
         desc: "Consolidate invoicing, payroll tax divisions, and real-time revenue balance sheets under a highly secure, authorized permission module."
       },
       {
-        image: "assets/image/erp_action2.jpg",
+        image: `${import.meta.env.BASE_URL}assets/image/erp_action2.jpg`,
         captionTitle: "Stock Automation",
         captionDesc: "Real-time serial number barcodes",
         title: "Supply Chain & Stock Intelligence",
@@ -396,14 +396,14 @@ export const DETAILED_SERVICES_MAP: Record<string, {
         companyName: "Sheger Manufacturing S.C.",
         projectName: "Operations & HR suite",
         label: "Unified inventory levels, automated purchase orders for 14 overseas suppliers, and automated monthly payroll for 450+ employees.",
-        imageUrl: "assets/image/erp_project1.jpg"
+        imageUrl: `${import.meta.env.BASE_URL}assets/image/erp_project1.jpg`
       },
       {
         id: "erp-proj-2",
         companyName: "Yeka Trading Plc",
         projectName: "Multi-Ledger Accounting",
         label: "Consolidated five disparate bookkeeping channels into a single secure Odoo database with real-time localized audit compliance reporting.",
-        imageUrl: "assets/image/erp_project2.jpg"
+        imageUrl: `${import.meta.env.BASE_URL}assets/image/erp_project2.jpg`
       }
     ]
   }

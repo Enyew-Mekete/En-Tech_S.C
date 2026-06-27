@@ -41,7 +41,7 @@ export default function ServicesViews({ category, initialSubTab = "Logo Design",
       route: "service-web",
       title: "Web Design & Development",
       shortDesc: "Complete architectural structuring, UI designing, and full-stack implementation of robust modern web properties using React & Tailwind.",
-      image: "assets/image/services_web.jpg",
+      image: `${import.meta.env.BASE_URL}assets/image/services_web.jpg`,
       keywords: "coding terminal backend api logic server vite custom ui"
     },
     {
@@ -49,7 +49,7 @@ export default function ServicesViews({ category, initialSubTab = "Logo Design",
       route: "service-website",
       title: "Website Design & Development",
       shortDesc: "Corporate showcase networks, responsive marketing portals, lead funnels, and fluid grid systems optimized for desktops & mobiles.",
-      image: "assets/image/services_website.jpg",
+      image: `${import.meta.env.BASE_URL}assets/image/services_website.jpg`,
       keywords: "showcase responsive layout lead capture contact geolocation map"
     },
     {
@@ -57,7 +57,7 @@ export default function ServicesViews({ category, initialSubTab = "Logo Design",
       route: "service-graphics",
       title: "Graphics Design (All Assets)",
       shortDesc: "Premium vector corporate logo creation, high-click promotional banners, and click-optimized Youtube thumbnails.",
-      image: "assets/image/services_graphics.jpg",
+      image: `${import.meta.env.BASE_URL}assets/image/services_graphics.jpg`,
       keywords: "logo vectors digital banners youtube thumbnail brand guide ctr"
     },
     {
@@ -65,7 +65,7 @@ export default function ServicesViews({ category, initialSubTab = "Logo Design",
       route: "service-erp",
       title: "ERP System Consulting",
       shortDesc: "Comprehensive implementation, custom configuration, technical database migrations, and active support for Odoo and custom systems.",
-      image: "assets/image/services_erp.jpg",
+      image: `${import.meta.env.BASE_URL}assets/image/services_erp.jpg`,
       keywords: "erp consulting odoo logistics database migration integration training"
     }
   ];

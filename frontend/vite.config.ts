@@ -7,6 +7,10 @@ export default defineConfig(() => {
   return {
     // IMPORTANT: Set base to your repo name for GitHub Pages
     base: "/En-Tech_S.C/",
+    build: {
+      outDir: "../dist",
+      emptyOutDir: true,
+    },
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
