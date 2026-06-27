@@ -25,6 +25,7 @@
   },
   "include": [
     "frontend/src/**/*",
-    "backend/**/*"
+    "backend/**/*",
+    "vite-env.d.ts"
   ]
 }
