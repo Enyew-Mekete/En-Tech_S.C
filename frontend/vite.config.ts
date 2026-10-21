@@ -1,19 +1,29 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import { defineConfig } from 'vite';
 
+const currentDir = fileURLToPath(new URL('.', import.meta.url));
+
 export default defineConfig(() => {
+  // Use /En-Tech_S.C/ when building on GitHub Actions or deploying to GitHub Pages, otherwise '/'
+  const isGitHubPages =
+    process.env.GITHUB_ACTIONS === "true" ||
+    process.env.DEPLOY_TARGET === "gh-pages" ||
+    process.env.VITE_BASE === "/En-Tech_S.C/";
+  const base = isGitHubPages ? "/En-Tech_S.C/" : "/";
+
   return {
-    base: "/",
+    base,
     build: {
-      outDir: "dist",
+      outDir: path.resolve(currentDir, "dist"),
       emptyOutDir: true,
     },
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': currentDir,
       },
     },
     server: {

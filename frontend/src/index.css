@@ -36,7 +36,7 @@ html.dark .bg-slate-50,
 html.dark .bg-gray-50,
 html.dark .bg-slate-100,
 html.dark .bg-gray-100,
-html.dark .bg-[#e6f1f5] {
+html.dark [class*="bg-[#e6f1f5]"] {
   background-color: #0f172a !important; /* Slate 900 (Main theme backdrop) */
   color: #f1f5f9 !important;
 }
