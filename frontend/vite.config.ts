@@ -5,10 +5,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
-    // IMPORTANT: Set base to your repo name for GitHub Pages
-    base: "/En-Tech_S.C/",
+    base: "/",
     build: {
-      outDir: "../dist",
+      outDir: "dist",
       emptyOutDir: true,
     },
     plugins: [react(), tailwindcss()],

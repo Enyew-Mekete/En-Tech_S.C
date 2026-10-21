@@ -4,7 +4,7 @@ import { createServer as createViteServer } from "vite";
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3000;
 
   // JSON parsing middleware
   app.use(express.json());
@@ -43,9 +43,9 @@ async function startServer() {
     console.log("Serving production static assets from frontend/dist.");
   }
 
-  // Bind to localhost instead of 0.0.0.0
-  app.listen(PORT, "localhost", () => {
-    console.log(`Backend server listening at http://localhost:${PORT}`);
+  // Bind to 0.0.0.0 to be accessible within container environments
+  app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Backend server listening at http://0.0.0.0:${PORT}`);
   });
 }
 
